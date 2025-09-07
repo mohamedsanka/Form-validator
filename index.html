@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Sign up</h1>
+<form class="form" noValidate>
+<label  for="name">Name</label>
+<input class="name" type="text" placeholder="Name" name="name" required>
+<label for="email">Email Address</label>
+<input class="email" type="email" placeholder="Email" name="email" required>
+<label for="password">Password</label>
+<input class="password" type="password" placeholder="Password(min 6 characters)"  required minlength="6" >
+<label for="confirm password">Confirm Password</label>
+<input class="confirm-password" type="password" placeholder="Confirm Password" name="password" required minlength="6">
+<button class="register-btn">Register</button>
+<p class="message">Don't Hesitate to fill</p>
+</form>
+</div>
+</body>
+</html>
